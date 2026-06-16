@@ -6,7 +6,7 @@
 /*   By: edgda-si <edgda-si@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 18:32:14 by edgda-si          #+#    #+#             */
-/*   Updated: 2026/06/15 20:13:41 by edgda-si         ###   ########.fr       */
+/*   Updated: 2026/06/16 18:32:43 by edgda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,5 @@ int	main(void)
 	ft_printf("A Casa %c\n", 'a');
 	ft_printf("A Casa %s\n", "Vermelha");
 	ft_printf("A Casa %%\n");
+	ft_printf("%p", 0);
 }

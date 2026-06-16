@@ -6,7 +6,7 @@
 #    By: edgda-si <edgda-si@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/15 15:48:20 by edgda-si          #+#    #+#              #
-#    Updated: 2026/06/15 19:53:23 by edgda-si         ###   ########.fr        #
+#    Updated: 2026/06/16 18:12:08 by edgda-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ SRCS = ft_printf.c \
         ft_putchar.c \
         ft_strchar.c \
         ft_handler.c \
-		ft_putstr.c
+		ft_putstr.c \
+		ft_putptr.c
         
 OBJS = $(SRCS:.c=.o)
 
