@@ -20,6 +20,12 @@ int	ft_handler(char c, va_list *args)
 		return (ft_putstr(va_arg(*args, char *)));
 	else if (c == 'p')
 		return (ft_putptr(va_arg(*args, void *)));
+	else if (c == 'd' || c == 'i')
+		return (ft_putnbr(va_arg(*args, int)));
+	else if (c == 'u')
+		return (ft_putunbr(va_arg(*args, unsigned int)));
+	else if (c == 'x' || c == 'X')
+		return (ft_puthex(va_arg(*args, unsigned int), c));
 	else if (c == '%')
 		return (ft_putchar('%'));
 	return (0);

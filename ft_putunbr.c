@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putunbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edgda-si <edgda-si@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/15 16:30:18 by edgda-si          #+#    #+#             */
-/*   Updated: 2026/06/15 17:50:03 by edgda-si         ###   ########.fr       */
+/*   Created: 2026/06/16 21:32:19 by marvin            #+#    #+#             */
+/*   Updated: 2026/06/16 21:32:19 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putchar(int c)
+int	ft_putunbr(unsigned int n)
 {
-	write (1, &c, 1);
-	return (1);
+    int	count;
+
+    count = 0;
+    if (n > 9)
+        count += ft_putunbr(n / 10);
+    count += ft_putchar((n % 10) + '0');
+    return (count);
 }

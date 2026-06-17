@@ -17,5 +17,13 @@ int	main(void)
 	ft_printf("A Casa %c\n", 'a');
 	ft_printf("A Casa %s\n", "Vermelha");
 	ft_printf("A Casa %%\n");
-	ft_printf("%p", 0);
+	ft_printf("%p\n", 42);
+	ft_printf("%x\n", 42);
+	ft_printf("%X\n", 42);
+	ft_printf("%d\n", 10);
+	ft_printf("%i\n", -10);
+	ft_printf("%u\n", -10);
+	ft_printf("%u\n", 12);
+	ft_printf("%q\n");
+	printf("%q\n");
 }
