@@ -20,7 +20,6 @@
 int		ft_printf(const char *format, ...);
 int		ft_putchar(int c);
 char	*ft_strchr(const char *s, int c);
-int		ft_handler(char c, va_list *args);
 int		ft_putstr(char *str);
 int		ft_putptr(void *ptr);
 int		ft_putnbr(int n);

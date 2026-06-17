@@ -22,7 +22,7 @@ static	int	ft_puthex_ptr(unsigned long num)
 	if (num >= 16)
 		count += ft_puthex_ptr(num / 16);
 	count += ft_putchar(base[num % 16]);
-	return (count + 1);
+	return (count);
 }
 
 int	ft_putptr(void *ptr)

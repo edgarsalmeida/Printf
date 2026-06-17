@@ -12,9 +12,9 @@
 
 #include "ft_printf.h"
 
-int    ft_puthex(unsigned int n, char format)
+int	ft_puthex(unsigned int n, char format)
 {
-    int		count;
+	int		count;
 	char	*base;
 
 	count = 0;

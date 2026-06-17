@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/16 21:32:19 by marvin            #+#    #+#             */
-/*   Updated: 2026/06/16 21:32:19 by marvin           ###   ########.fr       */
+/*   Updated: 2026/06/17 17:56:50 by edgda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 int	ft_putunbr(unsigned int n)
 {
-    int	count;
+	int	count;
 
-    count = 0;
-    if (n > 9)
-        count += ft_putunbr(n / 10);
-    count += ft_putchar((n % 10) + '0');
-    return (count);
+	count = 0;
+	if (n > 9)
+		count += ft_putunbr(n / 10);
+	count += ft_putchar((n % 10) + '0');
+	return (count);
 }

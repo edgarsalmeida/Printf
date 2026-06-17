@@ -14,16 +14,13 @@
 
 int	main(void)
 {
-	ft_printf("A Casa %c\n", 'a');
-	ft_printf("A Casa %s\n", "Vermelha");
-	ft_printf("A Casa %%\n");
-	ft_printf("%p\n", 42);
-	ft_printf("%x\n", 42);
-	ft_printf("%X\n", 42);
-	ft_printf("%d\n", 10);
-	ft_printf("%i\n", -10);
-	ft_printf("%u\n", -10);
-	ft_printf("%u\n", 12);
-	ft_printf("%q\n");
-	printf("%q\n");
+	int	x;
+
+	void *ptr = (void *)0x1234;
+
+	x = ft_printf("String: %s | Char: %c | Hex: %x | HEX: %X | Ptr: %p | Unsigned: %u | Decimal: %d | Integer: %i\n", "Hello World", 'A', 255, 255, ptr, 4294967295U, -42, 42);
+	printf("%d\n", x);
+	x = printf("String: %s | Char: %c | Hex: %x | HEX: %X | Ptr: %p | Unsigned: %u | Decimal: %d | Integer: %i\n", "Hello World", 'A', 255, 255, ptr, 4294967295U, -42, 42);
+	printf("%d\n", x);
+
 }

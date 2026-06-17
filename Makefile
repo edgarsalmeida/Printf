@@ -19,7 +19,6 @@ CFLAGS = -Wall -Wextra -Werror
 SRCS = ft_printf.c \
         ft_putchar.c \
         ft_strchar.c \
-        ft_handler.c \
 		ft_putstr.c \
 		ft_putptr.c \
 		ft_putnbr.c \
@@ -38,7 +37,7 @@ $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) 
 
 fclean: clean
 	rm -f $(NAME)
